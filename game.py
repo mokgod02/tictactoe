@@ -1,5 +1,5 @@
 import math
-from player import HumanPlayer, ComputerPlayer
+from player import HumanPlayer, ComputerPlayer,SmartComputerPlayer
 
 
 class TicTacToe():
@@ -88,7 +88,7 @@ def play(game, x_player, o_player, print_game=True):
 
 
 if __name__ == '__main__':
-    x_player = ComputerPlayer('X')
-    o_player = HumanPlayer('O')
+    x_player = HumanPlayer('X')
+    o_player = SmartComputerPlayer('O')
     t = TicTacToe()
     play(t, x_player, o_player, print_game=True)
